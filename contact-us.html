@@ -288,6 +288,9 @@
                 </fieldset>
               </div>
               <div class="col-lg-12">
+                <div id="ps-consent"></div>
+              </div>
+              <div class="col-lg-12">
                 <fieldset>
                   <button type="submit" id="form-submit" class="orange-button">Send Message</button>
                 </fieldset>
@@ -446,6 +449,60 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/swiper.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="http://192.168.220.46/static/consent-widget.js"></script>
+  <script>
+    const widget = window.PrivacyShieldConsent.init({
+      noticeId: 3045302526,
+      mountSelector: "#ps-consent"
+    });
+
+    document.getElementById("contact").addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      const consentState = widget.getState();
+      if (!consentState.consentProvided) {
+        alert("Please review and accept the consent notice before submitting.");
+        return;
+      }
+
+      const form = event.currentTarget;
+      const payload = {
+        NoticeId: consentState.noticeId,
+        Name: form.elements.name.value,
+        EmailAddress: form.elements.email.value,
+        PhoneNumber: form.elements.phone.value,
+        SourceUrl: window.location.href,
+        Context: "Contact Us Form",
+        Source: "Website",
+        NoticeLanguage: consentState.selectedLanguageCode,
+        Purposes: consentState.selectedPurposeIds.map(function (purposeId) {
+          return {
+            PurposeId: purposeId,
+            Decision: "Allow"
+          };
+        })
+      };
+
+      try {
+        const response = await fetch("http://192.168.220.46/api/consents", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+          throw new Error("Save Consent API returned " + response.status);
+        }
+
+        form.submit();
+      } catch (error) {
+        console.error("Failed to save consent", error);
+        alert("We could not save your consent. Please try again.");
+      }
+    });
+  </script>
   <script>AOS.init({ duration: 800, once: true });</script>
 
   <!-- MUI Contact Info Section -->
