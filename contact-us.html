@@ -287,10 +287,6 @@
                   <textarea name="message" id="message" placeholder="Your Message *" required></textarea>
                 </fieldset>
               </div>
-              <!-- PrivacyShield Consent Widget -->
-              <div class="col-lg-12">
-                  <div id="ps-consent"></div>
-              </div>
               <div class="col-lg-12">
                 <fieldset>
                   <button type="submit" id="form-submit" class="orange-button">Send Message</button>
@@ -450,37 +446,6 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/swiper.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/privacyshield-mock-widget.js"></script>
-  <script>
-    const widget = window.PrivacyShieldConsent.init({
-        noticeId: 3045302526,
-        mountSelector: "#ps-consent"
-    });
-  </script>
-
-<script>
-    const form = document.getElementById("contact");
-
-    form.addEventListener("submit", function(event) {
-
-        // Stop the normal form submission temporarily
-        event.preventDefault();
-
-        // Get the consent state from PrivacyShield
-        const consentState = widget.getState();
-
-        // Check whether consent has been provided
-        if (!consentState.consentProvided) {
-            alert("Please provide your consent before submitting the form.");
-            return;
-        }
-
-        // Display consent information for testing
-        console.log("Consent State:", consentState);
-
-    });
-</script>
-
   <script>AOS.init({ duration: 800, once: true });</script>
 
   <!-- MUI Contact Info Section -->
