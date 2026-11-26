@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/dpdpa"
+  to = "/dpdpa.html"
+  status = 200

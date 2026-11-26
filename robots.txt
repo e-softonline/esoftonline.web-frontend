@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Block non-public files
+Disallow: /test_out
+Disallow: /server.py
+Disallow: /make_favicon.py
+Disallow: /.netlify/
+
+# Sitemap
+Sitemap: https://e-softonline.com/sitemap.xml
+
+# AI crawlers — llms.txt for brand context
+# https://e-softonline.com/llms.txt

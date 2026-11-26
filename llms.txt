@@ -1,0 +1,75 @@
+# E-Soft Online
+
+> E-Soft Online is an enterprise IT company based in Noida, India, with over 20 years of experience in cybersecurity, cloud infrastructure, and AI solutions. We serve 500+ enterprise clients across India and help businesses protect their data, modernize their IT, and use artificial intelligence to grow.
+
+## Who We Are
+
+E-Soft Online (also known as eSoft Online) is a Managed Security Services Provider (MSSP) and Managed Services Provider (MSP) headquartered at Sector-132, Noida, Uttar Pradesh, India. Founded in 2003, we have grown into one of India's trusted enterprise technology partners, serving organizations in BFSI, healthcare, manufacturing, hospitality, retail, education, and government sectors.
+
+Our team of 150+ certified professionals delivers cybersecurity, cloud, and AI solutions to enterprise clients across India and internationally.
+
+**Contact:** info@e-softindia.com | (+91) 0120-4115463
+**Address:** Unit No. 535, Tower-B, Logix Technova, Sector-132, Noida — 201301
+**Website:** https://e-softonline.com
+
+## What We Do
+
+### Cybersecurity Services
+E-Soft Online protects businesses from cyber threats through a full range of security services. We conduct vulnerability assessments and penetration testing (VAPT) to find security weaknesses before attackers do. We run 24/7 Security Operations Centers (SOC) and Network Operations Centers (NOC) that monitor client environments in real time. We help organizations achieve ISO 27001, ISO 27701, and ISO 22301 certification. We also help organizations comply with India's Digital Personal Data Protection Act (DPDPA 2023). Our Virtual CISO and Virtual DPO services give businesses access to senior cybersecurity leadership without the cost of a full-time hire.
+
+### Cloud & Infrastructure Services
+We help businesses move to the cloud safely and efficiently. As a certified Microsoft Azure partner, we handle cloud adoption, migration, identity management, and Azure-native security. We migrate organizations to Microsoft 365, including Exchange Online, SharePoint, Teams, and OneDrive. We design and deploy hybrid cloud solutions using Azure, Nutanix, and HPE. We implement disaster recovery solutions with zero data loss objectives. We are a certified ManageEngine partner, delivering ITSM, endpoint management, and IT operations solutions.
+
+### AI Solutions
+E-Soft Online helps enterprises use artificial intelligence practically. We build custom AI and machine learning models tailored to specific business data and workflows. We develop Generative AI solutions including LLM-powered chatbots, RAG-based knowledge systems, and document intelligence platforms. We help organizations deploy Microsoft Copilot across their Microsoft 365 environment. We build computer vision systems for smart manufacturing, surveillance, and quality control. We develop IoT AI solutions for edge computing and real-time sensor data analysis.
+
+## Why Clients Choose E-Soft Online
+
+- Nearly 30 years of experience in enterprise IT
+- 500+ enterprise clients across India
+- 150+ certified technology professionals
+- Microsoft Azure certified partner
+- ManageEngine certified partner
+- ISO compliance experts with 98% certification success rate
+- 24/7 managed security operations
+- Offices in Noida, serving clients across Delhi NCR and pan-India
+
+## Commonly Asked Questions
+
+**What cybersecurity services does E-Soft Online provide?**
+E-Soft Online provides VAPT (vulnerability assessment and penetration testing), SOC/NOC managed security services, ISO 27001 compliance, DPDPA compliance, IT security solutions, and Virtual CISO services.
+
+**Is E-Soft Online a Microsoft Azure partner?**
+Yes, E-Soft Online is a certified Microsoft Azure partner in India, providing cloud adoption, migration, and managed Azure services.
+
+**Where is E-Soft Online located?**
+E-Soft Online is located at Sector-132, Noida, Uttar Pradesh, India — in the Delhi NCR region.
+
+**What industries does E-Soft Online serve?**
+E-Soft Online serves BFSI, healthcare, manufacturing, hospitality, retail, education, government, IT/software, and e-commerce industries.
+
+**How can I contact E-Soft Online?**
+Email: info@e-softindia.com | Phone: (+91) 0120-4115463 | Website: https://e-softonline.com/contact-us
+
+## Pages
+
+- [Home](https://e-softonline.com/)
+- [About Us](https://e-softonline.com/about-us)
+- [Our Services](https://e-softonline.com/our-services)
+- [ISO Compliance](https://e-softonline.com/iso)
+- [DPDPA Compliance](https://e-softonline.com/dpdpa)
+- [VAPT Services](https://e-softonline.com/vapt-solutions)
+- [SOC NOC Solutions](https://e-softonline.com/soc-noc-solutions)
+- [IT Security Solutions](https://e-softonline.com/it-security-solutions)
+- [Virtual CISO & DPO](https://e-softonline.com/virtual-ciso-dpo)
+- [Azure Cloud](https://e-softonline.com/azure-cloud)
+- [M365 Migration](https://e-softonline.com/m365-migration)
+- [Hybrid Cloud](https://e-softonline.com/hybrid-cloud)
+- [Disaster Recovery](https://e-softonline.com/disaster-recovery)
+- [ManageEngine](https://e-softonline.com/manageengine)
+- [Enterprise AI Strategy](https://e-softonline.com/enterprise-ai)
+- [Custom AI & ML](https://e-softonline.com/custom-ai-ml)
+- [Generative AI](https://e-softonline.com/generative-ai)
+- [Computer Vision & IoT](https://e-softonline.com/computer-vision-iot)
+- [Blog](https://e-softonline.com/blogs)
+- [Contact Us](https://e-softonline.com/contact-us)

@@ -1,0 +1,82 @@
+Options -Indexes
+Options +FollowSymLinks
+
+RewriteEngine On
+
+# ── Force HTTPS ──────────────────────────────────────────────────────────────
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ── www → non-www redirect (consistent canonical domain) ─────────────────────
+RewriteCond %{HTTP_HOST} ^www\.e-softonline\.com$ [NC]
+RewriteRule ^ https://e-softonline.com%{REQUEST_URI} [L,R=301]
+
+# ── Redirect .html URLs to clean URLs (removes .html from address bar) ───────
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# ── Serve clean URLs → actual .html files (no 404 on extensionless links) ────
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ /$1.html [L]
+
+# ── Custom 404 page ──────────────────────────────────────────────────────────
+ErrorDocument 404 /index.html
+
+# ── Security Headers ─────────────────────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ── Browser Caching ──────────────────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/ico "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/css "access plus 6 months"
+  ExpiresByType application/javascript "access plus 6 months"
+  ExpiresByType text/javascript "access plus 6 months"
+  ExpiresByType text/html "access plus 1 day"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/x-font-ttf "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# ── Cache-Control headers for fonts ──────────────────────────────────────────
+<IfModule mod_headers.c>
+  <FilesMatch "\.(woff|woff2|ttf|eot)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|ico|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=15552000"
+  </FilesMatch>
+</IfModule>
+
+# ── Gzip Compression ─────────────────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript
+  AddOutputFilterByType DEFLATE image/svg+xml application/json text/plain
+  AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-woff
+</IfModule>
+
+# ── Font MIME types ───────────────────────────────────────────────────────────
+<IfModule mod_mime.c>
+  AddType application/font-woff  .woff
+  AddType application/font-woff2 .woff2
+  AddType application/x-font-ttf .ttf
+</IfModule>

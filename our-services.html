@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Preconnect hints for faster resource loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <link rel="apple-touch-icon" href="favicon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Cybersecurity, cloud, AI & managed IT services from E-Soft Online — tailored for enterprise organizations across India.">
+  <meta name="keywords" content="IT services company Noida, cybersecurity services India, cloud services India, AI solutions provider India, Fortinet solutions India, Palo Alto solutions India, Azure cloud services India, managed IT services Delhi NCR, enterprise technology services Noida, microsoft 365 migration services India, custom machine learning solutions India, DPDPA compliance India, E-Soft Online services">
+  <meta name="author" content="eSoft Online">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://e-softonline.com/our-services">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IT Services | Cybersecurity, Cloud & AI | E-Soft Online">
+  <meta property="og:description" content="Cybersecurity, cloud, AI & managed IT services from E-Soft Online — tailored for enterprise organizations across India.">
+  <meta property="og:url" content="https://e-softonline.com/our-services">
+  <meta property="og:image" content="https://e-softonline.com/assets/images/service-cyber.jpg">
+  <meta property="og:site_name" content="eSoft Online">
+  <meta property="og:locale" content="en_IN">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ESoft_Solutions">
+  <meta name="twitter:title" content="IT Services | Cybersecurity, Cloud & AI | E-Soft Online">
+  <meta name="twitter:description" content="Cybersecurity, cloud, AI & managed IT services from E-Soft Online — tailored for enterprise organizations across India.">
+  <meta name="twitter:image" content="https://e-softonline.com/assets/images/service-cyber.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IT Services | Cybersecurity, Cloud & AI | eSoft Online",
+    "url": "https://e-softonline.com/our-services",
+    "description": "Explore eSoft Online's comprehensive IT services — cybersecurity, cloud infrastructure, AI solutions, and managed IT services tailored for enterprise organizations.",
+    "provider": {
+      "@type": "Organization",
+      "name": "eSoft Online",
+      "url": "https://e-softonline.com",
+      "logo": "https://e-softonline.com/assets/images/logo.jpeg"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "serviceType": "IT Services"
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <title>IT Services | Cybersecurity, Cloud & AI | E-Soft Online</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <!-- MUI & React via CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/@emotion/react@11/dist/emotion-react.umd.min.js"></script>
+  <script src="https://unpkg.com/@emotion/styled@11/dist/emotion-styled.umd.min.js"></script>
+  <script src="https://unpkg.com/@mui/material@5/umd/material-ui.production.min.js"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    .service-category-badge {
+      display: inline-block;
+      background: #ecf8f2;
+      color: #43ba7f;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 4px 12px;
+      border-radius: 3px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .services-nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    .services-nav-tabs button {
+      background: #fff;
+      border: 2px solid #e0e0e0;
+      border-radius: 25px;
+      padding: 10px 22px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #212741;
+      cursor: pointer;
+      transition: all .3s;
+      font-family: Poppins, sans-serif;
+    }
+    .services-nav-tabs button.active,
+    .services-nav-tabs button:hover {
+      background: #212741;
+      border-color: #212741;
+      color: #fff;
+    }
+    .service-link-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all .3s;
+      text-decoration: none !important;
+      color: #212741 !important;
+      margin-bottom: 14px;
+      border-left: 3px solid transparent;
+    }
+    .service-link-card:hover {
+      border-left-color: #43ba7f;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      transform: translateX(4px);
+    }
+    .service-link-card i { font-size: 20px; color: #43ba7f; min-width: 28px; }
+    .service-link-card span { font-size: 14px; font-weight: 500; }
+    .service-link-card .arrow { margin-left: auto; color: #ccc; font-size: 12px; }
+    .service-link-card:hover .arrow { color: #43ba7f; }
+  </style>
+  <!-- Google Analytics GA4 -->
+  <!-- Replace G-9J3LX1G8TS with your real Measurement ID from analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9J3LX1G8TS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9J3LX1G8TS', {
+      page_path: window.location.pathname,
+      anonymize_ip: true
+    });
+  </script>
+  <!-- Google Search Console Verification -->
+  <!-- Replace content value with your verification token from search.google.com/search-console -->
+  <meta name="google-site-verification" content="5QNMfkmmSPMPExTfoKwFTmtbpJiqg_W-s4fDqh4vL5c">
+</head>
+
+<body>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index" class="logo">
+              <img src="assets/images/logo-transparent.png" alt="eSoft Online">
+            </a>
+            <ul class="nav">
+              <li><a href="index">Home</a></li>
+              <li class="has-sub">
+                <a href="about-us">About Us</a>
+                <ul class="sub-menu">
+                  <li><a href="about-us">Who We Are</a></li>
+                  <li><a href="contact-us">Contact Us</a></li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="our-services">Cybersecurity</a>
+                <ul class="sub-menu" style="width:230px">
+                  <li><a href="iso">ISO Compliance</a></li>
+                  <li><a href="dpdpa">DPDPA Compliance</a></li>
+                  <li><a href="vapt-solutions">VAPT Services</a></li>
+                  <li><a href="soc-noc-solutions">SOC NOC Solutions</a></li>
+                  <li><a href="it-security-solutions">IT Security Solutions</a></li>
+                  <li><a href="virtual-ciso-dpo">Virtual CISO &amp; DPO</a></li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="our-services">Cloud &amp; Infra</a>
+                <ul class="sub-menu" style="width:230px">
+                  <li><a href="azure-cloud">Azure Cloud</a></li>
+                  <li><a href="m365-migration">M365 Migration</a></li>
+                  <li><a href="hybrid-cloud">Hybrid Cloud</a></li>
+                  <li><a href="#">Managed Services</a></li>
+                  <li><a href="disaster-recovery">Disaster Recovery</a></li>
+                  <li><a href="manageengine">ManageEngine</a></li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="our-services">AI</a>
+                <ul class="sub-menu" style="width:230px">
+                  <li><a href="enterprise-ai">Enterprise AI Strategy</a></li>
+                  <li><a href="custom-ai-ml">Custom AI &amp; ML</a></li>
+                  <li><a href="generative-ai">Generative AI</a></li>
+                  <li><a href="computer-vision-iot">Computer Vision &amp; IoT</a></li>
+                </ul>
+              </li>
+              <li><a href="blogs">Blogs</a></li>
+              <li><a href="contact-us">Contact Support</a></li>
+            </ul>
+            <button class="menu-trigger" aria-label="Open navigation menu" aria-expanded="false"><span>Menu</span></button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile nav — pure vanilla JS -->
+  <script>
+  document.addEventListener('DOMContentLoaded',function(){
+    var btn=document.querySelector('.menu-trigger');
+    var nav=document.querySelector('.header-area .main-nav .nav');
+    if(!btn||!nav)return;
+    btn.addEventListener('click',function(e){e.stopPropagation();var o=nav.classList.toggle('active');btn.classList.toggle('active',o);btn.setAttribute('aria-expanded',String(o));});
+    nav.querySelectorAll('li.has-sub > a').forEach(function(l){l.addEventListener('click',function(e){if(window.innerWidth<768){e.preventDefault();e.stopPropagation();var li=this.parentElement;var w=li.classList.contains('open');nav.querySelectorAll('li.has-sub').forEach(function(x){x.classList.remove('open');});if(!w)li.classList.add('open');}});});
+    document.addEventListener('click',function(e){if(window.innerWidth<768&&nav.classList.contains('active')&&!e.target.closest('.main-nav')){nav.classList.remove('active');btn.classList.remove('active');btn.setAttribute('aria-expanded','false');nav.querySelectorAll('li.has-sub').forEach(function(x){x.classList.remove('open');});}});
+  });
+  </script>
+  <!-- ***** Header End ***** -->
+
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h1 style="color:#ffffff;">Our Services</h1>
+            <div class="div-dec"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Services -->
+  <section class="main-services">
+    <div class="container">
+      <div class="row">
+
+        <!-- Cybersecurity -->
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="service-item">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1 text-center align-self-center">
+                <div class="right-text-content" style="margin:0 auto;text-align:center;">
+                  <span class="service-category-badge">Cybersecurity</span>
+                  <i class="fas fa-shield-alt"></i>
+                  <h4>Cybersecurity Solutions</h4>
+                  <p>Comprehensive end-to-end security from audits and assessments to active threat operations. Covering ISO compliance, VAPT, SOC/NOC, SD-WAN protection, phishing simulation, OT infrastructure security, and advisory services including virtual CISO and DPO.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & Infra -->
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="service-item">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1 text-center align-self-center">
+                <div class="left-text-content" style="margin:0 auto;text-align:center;">
+                  <span class="service-category-badge">Cloud &amp; Infrastructure</span>
+                  <i class="fas fa-cloud"></i>
+                  <h4>Cloud &amp; Infrastructure</h4>
+                  <p>Scalable cloud and infrastructure services across Microsoft Azure, M365, hybrid cloud architectures, and ManageEngine solutions. Includes backup, disaster recovery, cloud optimization, multi-cloud strategy, and hyper-converged infrastructure for enterprise agility.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="service-item last-service">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1 text-center align-self-center">
+                <div class="right-text-content" style="margin:0 auto;text-align:center;">
+                  <span class="service-category-badge">AI &amp; Innovation</span>
+                  <i class="fas fa-robot"></i>
+                  <h4>AI &amp; Innovation</h4>
+                  <p>Enterprise AI strategy and transformation, custom machine learning solutions, Conversational AI and Generative AI, Computer Vision and IoT AI solutions. Helping organizations unlock the power of intelligent automation and data-driven decision making.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MUI Services Grid Root -->
+  <div id="mui-services-grid-root"></div>
+
+  <!-- CTA -->
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5" data-aos="fade-right">
+          <h4>Enterprise-Grade <em>Solutions</em> &amp; <strong>Expert</strong> Guidance</h4>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="buttons">
+            <div class="green-button"><a href="contact-us">Get a Consultation</a></div>
+            <div class="orange-button"><a href="about-us">About Us</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details Tabs -->
+  <section class="service-details" style="padding: 50px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="section-label">Service Details</p>
+            <h2>Explore Our Offerings</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="row">
+        <div class="col-lg-12 text-center mb-4">
+          <div class="service-tab-btns">
+            <button class="stab-btn active" data-tab="tab-cyber">Cybersecurity</button>
+            <button class="stab-btn" data-tab="tab-cloud">Cloud &amp; Infra</button>
+            <button class="stab-btn" data-tab="tab-ai">AI Solutions</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="stab-panel active" id="tab-cyber" data-aos="fade-up">
+        <div class="row align-items-center" style="background:#fff;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.08);overflow:hidden;">
+          <div class="col-lg-5" style="padding:0;">
+            <img src="assets/images/service-cyber.jpg" alt="Cybersecurity" style="width:100%!important;height:360px;object-fit:cover;display:block;">
+          </div>
+          <div class="col-lg-7" style="padding:40px;">
+            <h4 style="font-size:24px;font-weight:800;color:#212741;margin-bottom:16px;">Comprehensive Cybersecurity Across Every Layer</h4>
+            <p style="color:#555;font-size:15px;line-height:1.75;margin-bottom:20px;">From audits and compliance to real-time threat monitoring, we cover the full security spectrum for enterprise organizations.</p>
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>SOC/NOC 24/7 Managed Operations</li>
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>ISO, VAPT &amp; Data Protection Compliance</li>
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Virtual CISO, DPO &amp; Security Advisory</li>
+              <li style="padding:8px 0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Phishing Simulation &amp; Incident Response</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="stab-panel" id="tab-cloud" data-aos="fade-up">
+        <div class="row align-items-center" style="background:#fff;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.08);overflow:hidden;">
+          <div class="col-lg-5" style="padding:0;">
+            <img src="assets/images/service-cloud.jpg" alt="Cloud Infrastructure" style="width:100%!important;height:360px;object-fit:cover;display:block;">
+          </div>
+          <div class="col-lg-7" style="padding:40px;">
+            <h4 style="font-size:24px;font-weight:800;color:#212741;margin-bottom:16px;">Cloud &amp; Infrastructure for Enterprise Scale</h4>
+            <p style="color:#555;font-size:15px;line-height:1.75;margin-bottom:20px;">Azure, M365, hybrid cloud, ManageEngine, backup and disaster recovery — all managed to ensure your infrastructure never slows you down.</p>
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Azure Cloud &amp; Microsoft 365 Solutions</li>
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Hybrid &amp; Multi-Cloud Architectures</li>
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Storage, HCI &amp; Disaster Recovery</li>
+              <li style="padding:8px 0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Identity, ITSM &amp; Endpoint Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="stab-panel" id="tab-ai" data-aos="fade-up">
+        <div class="row align-items-center" style="background:#fff;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.08);overflow:hidden;">
+          <div class="col-lg-5" style="padding:0;">
+            <img src="assets/images/service-ai.jpg" alt="AI Solutions" style="width:100%!important;height:360px;object-fit:cover;display:block;">
+          </div>
+          <div class="col-lg-7" style="padding:40px;">
+            <h4 style="font-size:24px;font-weight:800;color:#212741;margin-bottom:16px;">AI-Powered Innovation for Business Growth</h4>
+            <p style="color:#555;font-size:15px;line-height:1.75;margin-bottom:20px;">From enterprise AI strategy to custom ML models and Generative AI — we turn AI from a concept into measurable business outcomes.</p>
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Enterprise AI Strategy &amp; Transformation</li>
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Custom AI &amp; Machine Learning Solutions</li>
+              <li style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Conversational AI &amp; Generative AI</li>
+              <li style="padding:8px 0;font-size:14px;color:#444;"><i class="fas fa-check-circle" style="color:#43ba7f;margin-right:10px;"></i>Computer Vision &amp; IoT AI Solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    .service-tab-btns { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+    .stab-btn {
+      background:#fff; border:2px solid #e0e0e0; border-radius:6px;
+      padding:12px 28px; font-size:15px; font-weight:600; color:#212741;
+      cursor:pointer; transition:all .25s; font-family:'Poppins',sans-serif;
+    }
+    .stab-btn:hover, .stab-btn.active {
+      background:#212741; border-color:#212741; color:#fff;
+    }
+    .stab-panel { display:none; }
+    .stab-panel.active { display:block; }
+  </style>
+
+  <script>
+    document.querySelectorAll('.stab-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        document.querySelectorAll('.stab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.stab-panel').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        document.getElementById(this.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+
+  <!-- Partners -->
+
+
+  <!-- Footer -->
+  <section class="partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h5 class="partners-title">Our Valued Clients &amp; Partners</h5>
+        </div>
+            <style>
+      @keyframes logoScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+      .logo-run{display:flex;animation:logoScroll 35s linear infinite;width:max-content;}
+      .logo-run:hover{animation-play-state:paused;}
+      .logo-run .lg{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:150px;height:72px;padding:0 18px;border-right:1px solid #f0f0f0;}
+      .logo-run .lg img{max-height:46px !important;max-width:110px !important;width:auto !important;height:auto !important;object-fit:contain !important;display:block !important;overflow:visible !important;}
+    </style>
+    <div style="overflow:hidden;width:100%;padding:8px 0;position:relative;">
+      <div style="position:absolute;top:0;left:0;width:60px;height:100%;background:linear-gradient(to right,#fff,transparent);z-index:2;pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:60px;height:100%;background:linear-gradient(to left,#fff,transparent);z-index:2;pointer-events:none;"></div>
+      <div class="logo-run">
+        <div class="lg"><img src="assets/images/logo_0.png" alt="Acer"></div>
+        <div class="lg"><img src="assets/images/logo_1.png" alt="Adobe"></div>
+        <div class="lg"><img src="assets/images/logo_2.png" alt="AWS"></div>
+        <div class="lg"><img src="assets/images/logo_3.png" alt="Azure"></div>
+        <div class="lg"><img src="assets/images/logo_4.png" alt="Cisco"></div>
+        <div class="lg"><img src="assets/images/logo_5.png" alt="Dell"></div>
+        <div class="lg"><img src="assets/images/logo_6.png" alt="Lenovo"></div>
+        <div class="lg"><img src="assets/images/Artemis hospital.png" alt="Artemis"></div>
+        <div class="lg"><img src="assets/images/Bhavna Corp.jpg" alt="Bhavna"></div>
+        <div class="lg"><img src="assets/images/bill gosling.png" alt="Bill Gosling"></div>
+        <div class="lg"><img src="assets/images/Businessnext-Acidaes.png" alt="BusinessNext"></div>
+        <div class="lg"><img src="assets/images/chambal fertilisers and chemicals limited.jpg" alt="Chambal"></div>
+        <div class="lg"><img src="assets/images/Da Milano.jpg" alt="Da Milano"></div>
+        <div class="lg"><img src="assets/images/easymytrip.jpg" alt="EaseMyTrip"></div>
+        <div class="lg"><img src="assets/images/Good earth.png" alt="Good Earth"></div>
+        <div class="lg"><img src="assets/images/Hyatt Gurgaon.jpg" alt="Hyatt"></div>
+        <div class="lg"><img src="assets/images/JSW.jpg" alt="JSW"></div>
+        <div class="lg"><img src="assets/images/jpm_group_logo.jpg" alt="JP Minda"></div>
+        <div class="lg"><img src="assets/images/kohinor-logopng.png" alt="Kohinoor"></div>
+        <div class="lg"><img src="assets/images/LKS.webp" alt="LKS"></div>
+        <div class="lg"><img src="assets/images/prospecta_software_logo.jpg" alt="Prospecta"></div>
+        <div class="lg"><img src="assets/images/puri constructions.jpg" alt="Puri"></div>
+        <div class="lg"><img src="assets/images/ROSMERTA.png" alt="Rosmerta"></div>
+        <div class="lg"><img src="assets/images/rsms_architects_.jpg" alt="RSMS"></div>
+        <div class="lg"><img src="assets/images/vitromed_healthcare_logo.jpg" alt="Vitromed"></div>
+        <div class="lg"><img src="assets/images/logo_0.png" alt="Acer"></div>
+        <div class="lg"><img src="assets/images/logo_1.png" alt="Adobe"></div>
+        <div class="lg"><img src="assets/images/logo_2.png" alt="AWS"></div>
+        <div class="lg"><img src="assets/images/logo_3.png" alt="Azure"></div>
+        <div class="lg"><img src="assets/images/logo_4.png" alt="Cisco"></div>
+        <div class="lg"><img src="assets/images/logo_5.png" alt="Dell"></div>
+        <div class="lg"><img src="assets/images/Hyatt Gurgaon.jpg" alt="Hyatt"></div>
+        <div class="lg"><img src="assets/images/Good earth.png" alt="Good Earth"></div>
+        <div class="lg"><img src="assets/images/JSW.jpg" alt="JSW"></div>
+        <div class="lg"><img src="assets/images/kohinor-logopng.png" alt="Kohinoor"></div>
+      </div>
+    </div>
+    </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row" style="padding-top:50px;padding-bottom:20px;">
+
+        <!-- Col 1: Logo + About -->
+        <div class="col-lg-4 mb-4">
+          <a href="index">
+            <img src="assets/images/logo.jpeg" alt="eSoft Online" class="footer-logo-img" style="height:44px;width:auto;max-width:200px;margin-bottom:20px;display:block;">
+          </a>
+          <p style="color:#555;font-size:14px;line-height:1.75;">Enterprise-grade cybersecurity, scalable cloud infrastructure, and AI-powered solutions to help businesses secure and accelerate their digital transformation.</p>
+          <div style="margin-top:18px;display:flex;gap:12px;align-items:center;">
+            <a href="https://www.linkedin.com/company/e-soft-online/?viewAsMember=true" target="_blank" style="display:inline-block;transition:transform .25s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              <img src="assets/images/linkedin.png" alt="LinkedIn" style="width:36px;height:36px;object-fit:contain;display:block;">
+            </a>
+            <a href="https://x.com/ESoft_Solutions" target="_blank" style="display:inline-block;transition:transform .25s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              <img src="assets/images/twitter.png" alt="X / Twitter" style="width:36px;height:36px;object-fit:contain;display:block;">
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-sm-6 mb-4">
+          <h6 style="color:#212741;font-weight:700;margin-bottom:18px;font-size:15px;">Quick Links</h6>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="margin-bottom:10px;"><a href="index" style="color:#555;font-size:14px;transition:color .2s;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">Home</a></li>
+            <li style="margin-bottom:10px;"><a href="about-us" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">About Us</a></li>
+            <li style="margin-bottom:10px;"><a href="our-services" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">Our Services</a></li>
+            <li style="margin-bottom:10px;"><a href="blogs" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">Blogs</a></li>
+            <li style="margin-bottom:10px;"><a href="contact-us" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="col-lg-2 col-sm-6 mb-4">
+          <h6 style="color:#212741;font-weight:700;margin-bottom:18px;font-size:15px;">Services</h6>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="margin-bottom:10px;"><a href="iso" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">ISO Compliance</a></li>
+            <li style="margin-bottom:10px;"><a href="dpdpa" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">DPDPA Compliance</a></li>
+            <li style="margin-bottom:10px;"><a href="vapt-solutions" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">VAPT Services</a></li>
+            <li style="margin-bottom:10px;"><a href="soc-noc-solutions" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">SOC NOC</a></li>
+            <li style="margin-bottom:10px;"><a href="azure-cloud" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">Azure Cloud</a></li>
+            <li style="margin-bottom:10px;"><a href="hybrid-cloud" style="color:#555;font-size:14px;" onmouseover="this.style.color='#43ba7f'" onmouseout="this.style.color='#555'">Hybrid Cloud</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="col-lg-4 mb-4">
+          <h6 style="color:#212741;font-weight:700;margin-bottom:18px;font-size:15px;">Contact Us</h6>
+          <p style="color:#555;font-size:14px;line-height:1.7;margin-bottom:12px;">
+            <i class="fas fa-map-marker-alt" style="color:#43ba7f;margin-right:8px;width:16px;"></i>
+            Unit No. 535, Tower-B, Logix Technova,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sector-132, Noida — 201301
+          </p>
+          <p style="color:#555;font-size:14px;margin-bottom:10px;">
+            <i class="fas fa-phone" style="color:#43ba7f;margin-right:8px;"></i>(+91) 0120-4115463
+          </p>
+          <p style="color:#555;font-size:14px;margin-bottom:16px;">
+            <i class="fas fa-envelope" style="color:#43ba7f;margin-right:8px;"></i>info@e-softindia.com
+          </p>
+          <p style="color:#555;font-size:13px;margin:0;">
+            <i class="fas fa-clock" style="color:#43ba7f;margin-right:8px;"></i>
+            Mon – Sat: 9:00 AM – 5:00 PM &nbsp;|&nbsp; Sun: Closed
+          </p>
+        </div>
+
+      </div>
+
+      <div class="row" style="border-top:1px solid #e8e8e8;padding-top:20px;padding-bottom:10px;">
+        <div class="col-lg-12 text-center">
+          <p style="color:#888;font-size:13px;margin:0;">Copyright &copy; 2025 eSoft Online. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js" defer></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+
+  <!-- MUI Services Grid -->
+  <script type="text/babel">
+    const { Box, Typography, Grid, Card, CardContent, Chip, Divider, List, ListItem, ListItemIcon, ListItemText } = MaterialUI;
+
+    const allServices = {
+      "Cybersecurity Audits": [
+        { name: "ISO Compliance", url: "iso.html", icon: "fas fa-certificate" },
+        { name: "Data Protection & Compliance", url: "iso.html", icon: "fas fa-lock" },
+        { name: "VAPT Services", url: "vapt-solutions.html", icon: "fas fa-bug" },
+        { name: "Internal Audit Services", url: "iso.html", icon: "fas fa-search" },
+      ],
+      "Cybersecurity Operations": [
+        { name: "SOC NOC Solutions", url: "soc-noc-solutions.html", icon: "fas fa-eye" },
+        { name: "IT Security Solutions", url: "it-security-solutions.html", icon: "fas fa-shield-alt" },
+        { name: "SD-WAN Protection", url: "it-security-solutions.html", icon: "fas fa-network-wired" },
+        { name: "Phishing Simulation", url: "it-security-solutions.html", icon: "fas fa-fish" },
+        { name: "NAC", url: "it-security-solutions.html", icon: "fas fa-server" },
+        { name: "OT Infrastructure Security", url: "it-security-solutions.html", icon: "fas fa-industry" },
+      ],
+      "Advisory & Consulting": [
+        { name: "Virtual CISO & DPO", url: "virtual-ciso-dpo.html", icon: "fas fa-user-tie" },
+        { name: "Cybersecurity Advisory", url: "virtual-ciso-dpo.html", icon: "fas fa-comments" },
+        { name: "Cloud Compliance Consulting", url: "virtual-ciso-dpo.html", icon: "fas fa-cloud" },
+        { name: "Security Incident Response", url: "virtual-ciso-dpo.html", icon: "fas fa-exclamation-triangle" },
+      ],
+      "Microsoft Cloud": [
+        { name: "Microsoft 365 Migration", url: "#", icon: "fas fa-mail-bulk" },
+        { name: "Microsoft Copilot Solutions", url: "#", icon: "fas fa-robot" },
+        { name: "Power BI & Fabric", url: "#", icon: "fas fa-chart-bar" },
+        { name: "Azure Cloud Solutions", url: "#", icon: "fas fa-cloud" },
+        { name: "M365 Security", url: "#", icon: "fas fa-shield-alt" },
+        { name: "SharePoint Solutions", url: "#", icon: "fas fa-share-alt" },
+      ],
+      "AI Solutions": [
+        { name: "Enterprise AI Strategy", url: "#", icon: "fas fa-brain" },
+        { name: "Custom AI & ML", url: "#", icon: "fas fa-cog" },
+        { name: "Computer Vision & IoT", url: "#", icon: "fas fa-eye" },
+        { name: "Conversational & Gen AI", url: "#", icon: "fas fa-comments" },
+      ],
+    };
+
+    const colors = { "Cybersecurity Audits": "#ff511a", "Cybersecurity Operations": "#212741", "Advisory & Consulting": "#43ba7f", "Microsoft Cloud": "#0078d4", "AI Solutions": "#7c3aed" };
+
+    function ServicesGrid() {
+      return (
+        <Box sx={{ py: 7, bgcolor: "#f5f7fa" }}>
+          <Box className="container">
+            <Typography variant="h6" sx={{ color: "#ff511a", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, textAlign: "center", fontFamily: "Poppins,sans-serif", mb: 1 }}>
+              Complete Service Portfolio
+            </Typography>
+            <Typography variant="h4" sx={{ fontWeight: 700, color: "#212741", textAlign: "center", fontFamily: "Poppins,sans-serif", mb: 5 }}>
+              All Services at a Glance
+            </Typography>
+            <Grid container spacing={3}>
+              {Object.entries(allServices).map(([category, items], ci) => (
+                <Grid item xs={12} sm={6} md={4} key={ci}>
+                  <Card data-aos="fade-up" data-aos-delay={ci * 80} sx={{
+                    borderRadius: 3, height: "100%",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.07)",
+                    transition: "transform .3s, box-shadow .3s",
+                    "&:hover": { transform: "translateY(-4px)", boxShadow: "0 8px 28px rgba(0,0,0,0.12)" },
+                    overflow: "hidden"
+                  }}>
+                    <Box sx={{ bgcolor: colors[category] || "#212741", py: 1.5, px: 2.5 }}>
+                      <Typography sx={{ color: "#fff", fontWeight: 700, fontSize: 15, fontFamily: "Poppins,sans-serif" }}>
+                        {category}
+                      </Typography>
+                    </Box>
+                    <CardContent sx={{ pt: 1.5, pb: "12px !important" }}>
+                      {items.map((svc, si) => (
+                        <Box key={si} component="a" href={svc.url} target="_blank" rel="noopener"
+                          sx={{
+                            display: "flex", alignItems: "center", gap: 1.2,
+                            py: 1, px: 1.2, borderRadius: 2, mb: 0.5,
+                            color: "#212741", textDecoration: "none",
+                            transition: "all .25s",
+                            "&:hover": { bgcolor: "#f0fdf6", color: "#43ba7f", pl: 1.8 }
+                          }}
+                        >
+                          <i className={svc.icon} style={{ fontSize: 13, color: "inherit", minWidth: 18 }}></i>
+                          <Typography sx={{ fontSize: 13, fontWeight: 500, fontFamily: "Poppins,sans-serif", color: "inherit" }}>
+                            {svc.name}
+                          </Typography>
+                          <Box sx={{ ml: "auto", fontSize: 10, opacity: 0.4 }}><i className="fas fa-arrow-right"></i></Box>
+                        </Box>
+                      ))}
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Box>
+      );
+    }
+
+    const root = document.getElementById("mui-services-grid-root");
+    if (root) ReactDOM.createRoot(root).render(<React.StrictMode><ServicesGrid /></React.StrictMode>);
+  </script>
+  <!-- Chatbot Widget -->
+  <div id="chatbot-btn" onclick="document.getElementById('chatbot-box').style.display=document.getElementById('chatbot-box').style.display==='flex'?'none':'flex'" style="position:fixed;bottom:20px;right:20px;width:52px;height:52px;background:linear-gradient(135deg,#F15A3C,#ff7a5a);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 20px rgba(241,90,60,0.45);z-index:9999;transition:transform .25s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <i class="fas fa-comments" style="color:#fff;font-size:22px;"></i>
+  </div>
+  <div id="chatbot-box" style="display:none;position:fixed;bottom:84px;right:16px;width:min(320px, calc(100vw - 32px));background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.18);flex-direction:column;z-index:9999;overflow:hidden;font-family:Poppins,sans-serif;">
+    <div style="background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <img src="assets/images/logo-transparent.png" alt="eSoft Online" class="chatbot-logo-img" style="height:24px;width:auto;max-width:110px;filter:brightness(0) invert(1);">
+        <div>
+          <div style="color:#fff;font-size:13px;font-weight:700;">eSoft Support</div>
+          <div style="color:#43ba7f;font-size:11px;">● Online</div>
+        </div>
+      </div>
+      <span onclick="document.getElementById('chatbot-box').style.display='none'" style="color:rgba(255,255,255,0.6);cursor:pointer;font-size:18px;line-height:1;">&times;</span>
+    </div>
+    <div id="chatbot-messages" style="padding:16px;height:240px;overflow-y:auto;background:#f8f9fb;display:flex;flex-direction:column;gap:10px;">
+      <div style="background:#212741;color:#fff;border-radius:12px 12px 12px 2px;padding:12px 14px;font-size:13px;max-width:85%;line-height:1.6;">
+        👋 Hi! Welcome to eSoft Online.<br>How can we help you today?
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;">
+        <button onclick="chatSend('Cybersecurity Services')" style="background:#fff;border:1px solid #e0e0e0;border-radius:20px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:Poppins,sans-serif;color:#212741;transition:all .2s;" onmouseover="this.style.background='#F15A3C';this.style.color='#fff';this.style.borderColor='#F15A3C'" onmouseout="this.style.background='#fff';this.style.color='#212741';this.style.borderColor='#e0e0e0'">Cybersecurity</button>
+        <button onclick="chatSend('Cloud Solutions')" style="background:#fff;border:1px solid #e0e0e0;border-radius:20px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:Poppins,sans-serif;color:#212741;transition:all .2s;" onmouseover="this.style.background='#F15A3C';this.style.color='#fff';this.style.borderColor='#F15A3C'" onmouseout="this.style.background='#fff';this.style.color='#212741';this.style.borderColor='#e0e0e0'">Cloud</button>
+        <button onclick="chatSend('AI Solutions')" style="background:#fff;border:1px solid #e0e0e0;border-radius:20px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:Poppins,sans-serif;color:#212741;transition:all .2s;" onmouseover="this.style.background='#F15A3C';this.style.color='#fff';this.style.borderColor='#F15A3C'" onmouseout="this.style.background='#fff';this.style.color='#212741';this.style.borderColor='#e0e0e0'">AI</button>
+        <button onclick="chatSend('Contact Support')" style="background:#fff;border:1px solid #e0e0e0;border-radius:20px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:Poppins,sans-serif;color:#212741;transition:all .2s;" onmouseover="this.style.background='#F15A3C';this.style.color='#fff';this.style.borderColor='#F15A3C'" onmouseout="this.style.background='#fff';this.style.color='#212741';this.style.borderColor='#e0e0e0'">Contact</button>
+      </div>
+    </div>
+    <div style="padding:12px 16px;border-top:1px solid #eee;display:flex;gap:8px;">
+      <input id="chatbot-input" type="text" placeholder="Type a message..." onkeypress="if(event.key==='Enter')chatSend()" style="flex:1;border:1px solid #e0e0e0;border-radius:20px;padding:8px 14px;font-size:13px;outline:none;font-family:Poppins,sans-serif;">
+      <button onclick="chatSend()" style="background:#F15A3C;border:none;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;">
+        <i class="fas fa-paper-plane" style="color:#fff;font-size:14px;"></i>
+      </button>
+    </div>
+  </div>
+  <script>
+    var chatResponses = {
+      'cybersecurity': 'We offer SOC/NOC, ISO Compliance, VAPT, IT Security, Virtual CISO & DPO. <a href="our-services" style="color:#F15A3C;">View all services</a>',
+      'cloud': 'We provide Azure Cloud, Hybrid Cloud, M365 Migration, ManageEngine & Disaster Recovery. <a href="azure-cloud" style="color:#F15A3C;">Learn more</a>',
+      'ai': 'Our AI services include Enterprise AI Strategy, Custom ML, Generative AI & Computer Vision. <a href="our-services" style="color:#F15A3C;">Explore AI</a>',
+      'contact': 'You can reach us at info@e-softindia.com or call (+91) 0120-4115463. <a href="contact-us" style="color:#F15A3C;">Contact page</a>',
+      'default': 'Thank you for reaching out! Our team will get back to you shortly. You can also email us at <a href="mailto:info@e-softindia.com" style="color:#F15A3C;">info@e-softindia.com</a>.'
+    };
+    function chatSend(msg) {
+      var input = document.getElementById('chatbot-input');
+      var text = msg || input.value.trim();
+      if (!text) return;
+      var msgs = document.getElementById('chatbot-messages');
+      msgs.innerHTML += '<div style="background:#F15A3C;color:#fff;border-radius:12px 12px 2px 12px;padding:10px 14px;font-size:13px;max-width:80%;align-self:flex-end;margin-left:auto;line-height:1.6;">' + text + '</div>';
+      var key = text.toLowerCase();
+      var reply = key.includes('cyber') || key.includes('soc') || key.includes('vapt') || key.includes('iso') ? chatResponses.cybersecurity
+                : key.includes('cloud') || key.includes('azure') || key.includes('hybrid') ? chatResponses.cloud
+                : key.includes('ai') || key.includes('machine') || key.includes('ml') ? chatResponses.ai
+                : key.includes('contact') || key.includes('phone') || key.includes('email') ? chatResponses.contact
+                : chatResponses.default;
+      setTimeout(function(){
+        msgs.innerHTML += '<div style="background:#212741;color:#fff;border-radius:12px 12px 12px 2px;padding:10px 14px;font-size:13px;max-width:85%;line-height:1.6;">' + reply + '</div>';
+        msgs.scrollTop = msgs.scrollHeight;
+      }, 600);
+      input.value = '';
+      msgs.scrollTop = msgs.scrollHeight;
+    }
+  </script>
+  <!-- Partners carousel init -->
+  <script>
+    $(window).on('load', function(){
+      if($('#partnersCarousel').length){
+        $('#partnersCarousel').owlCarousel({
+          loop: true, dots: true, nav: true,
+          autoplay: true, autoplayTimeout: 2200,
+          autoplayHoverPause: true, smartSpeed: 500, margin: 10,
+          navText: ['&#8249;','&#8250;'],
+          responsive:{0:{items:2},480:{items:3},768:{items:4},1000:{items:5}}
+        });
+        }
+      });
+  </script>
+</body>
+</html>
